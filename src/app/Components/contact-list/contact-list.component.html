@@ -1,0 +1,12 @@
+<div *ngIf="dataLoaded">
+  <input [formControl]="newContactName" placeholder="Nombre">
+  <button (click)="addContactPerson()" [disabled]="newContactName.invalid">Agregar nueva persona de contacto</button>
+
+  <div *ngFor="let person of contactPersons">
+    <h1>{{person.name}}
+      <button (click)="addContactToPerson(person.id)">+</button>
+      <button (click)="deleteContactPerson(person.id)">-</button>
+    </h1>
+    <app-contact-form [contacts]="person.contacts" [personId]="person.id"></app-contact-form>
+  </div>
+</div>

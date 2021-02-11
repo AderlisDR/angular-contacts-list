@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": "Juan",
+    "contacts": [
+      {
+        "id": 0,
+        "description": "8091234567"
+      },
+      {
+        "id": 1,
+        "description": "8099876543"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Pedro",
+    "contacts": [
+      {
+        "id": 0,
+        "description": "8291234567"
+      },
+      {
+        "id": 1,
+        "description": "8299876543"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Manuel",
+    "contacts": [
+      {
+        "id": 0,
+        "description": "8491234567"
+      },
+      {
+        "id": 1,
+        "description": "8499876543"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+<div *ngIf="display">
+  <div *ngFor="let formGroup of contactFormGroups">
+    <input [formControl]="formGroup.controls.description" placeholder="Contacto">
+    <button (click)="updateContact(formGroup.controls.id.value, formGroup.controls.description.value)" [disabled]="formGroup.controls.description.invalid">Guardar</button>
+    <button (click)="deleteContact(formGroup.controls.id.value)">-</button>
+  </div>
+</div>
